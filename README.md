@@ -4,7 +4,7 @@ mandrill-inbound-classes
 This is the set of classes that Surveylitics (http://survyelitics.com) uses to handle inbound emails with Mandrill (http://mandrillapp.com).
 
 They are designed to be used with Json.NET, like this:
-
+```csharp
 public ActionResult HandleMandrillWebhook(FormCollection fc)
 {
 	string json = fc["mandrill_events"];
@@ -19,3 +19,4 @@ public ActionResult HandleMandrillWebhook(FormCollection fc)
 	// MUST do this or Mandrill will not accept your webhook!
     return new HttpStatusCodeResult((int)HttpStatusCode.OK);
 }
+```
