@@ -10,9 +10,9 @@ public ActionResult HandleMandrillWebhook(FormCollection fc)
 	string json = fc["mandrill_events"];
 
 	var events = JsonConvert.DeserializeObject<IEnumerable<Mandrill.MailEvent>>(json);
-	foreach (var event in events)
+	foreach (var mailEvent in events)
 	{
-		var message = event.Msg;
+		var message = mailEvent.Msg;
 		// ... Do stuff with email message here...
 	}
 	
