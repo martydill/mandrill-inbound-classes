@@ -1,7 +1,7 @@
 mandrill-inbound-classes
 ========================
 
-This is the set of classes that Surveylitics (http://survyelitics.com) uses to handle inbound emails with Mandrill (http://mandrillapp.com).
+This is the set of classes that Surveylitics (http://surveylitics.com) uses to handle inbound emails with Mandrill (http://mandrillapp.com).
 
 They are designed to be used with Json.NET, like this:
 ```csharp
